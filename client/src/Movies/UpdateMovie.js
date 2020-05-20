@@ -41,8 +41,8 @@ const UpdateMovie = (props) => {
       .then((res) => {
         // res.data
         console.log("we done did it!", res);
-        props.setMovie(res);
-        debugger;
+        props.setMovie(res.data);
+        // debugger;
         push(`/movies/${id}`);
       })
       .catch((err) => console.log(err));
